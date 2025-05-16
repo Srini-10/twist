@@ -37,20 +37,21 @@ function App() {
 
   return (
     <>
-      {!isVideoPlayed ? (
+      {/* {!isVideoPlayed ? (
         // <Loading videoRef={videoRef} />
         <div className="fixed z-[999999999] w-full h-full flex justify-center items-center bg-[#d7e1ef]">
           <Spinner size="md" color="primary" className="brightness-[40%]" />
         </div>
-      ) : isLoading ? (
-        <div className="fixed z-[999999999] w-full h-full flex justify-center items-center bg-[#d7e1ef]">
-          <Spinner size="md" color="primary" className="brightness-[40%]" />
-        </div>
+      ) */}
+      : isLoading ? (
+      <div className="fixed z-[999999999] w-full h-full flex justify-center items-center bg-[#d7e1ef]">
+        <Spinner size="md" color="primary" className="brightness-[40%]" />
+      </div>
       ) : (
-        <BrowserRouter>
-          <Router />
-        </BrowserRouter>
-      )}
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+      ){/* } */}
     </>
   );
 }
